@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SVG</title>
+</head>
+<body>
+	<h1>SVG</h1>
+	<svg width="200" height="200">
+		<circle cx="100" cy="100" r="90" stroke="blue" stroke-width="4" fill="black"/>
+	</svg>
+
+	<h1>Rectangulo</h1>
+	<svg width="350" height="200">
+		<rect x="10" y="10" width="300" height="150" stroke="blue" stroke-width="4" fill="#black"></rect>
+	</svg>
+
+	<h1>Cuadrado</h1>
+	<svg width="200" height="200">
+		<rect x="10" y="10" width="150" height="150" stroke="blue" stroke-width="4" fill="black"></rect>
+	</svg>
+
+	<h1>Triangulo</h1>	
+	<svg width="200" height="200">
+  		<polygon points="10, 180 100, 10 190, 180" stroke="blue" stroke-width="4" fill="black"></polygon>
+  	</svg> 
+
+  	<h1>Corazón</h1>
+	<svg height="315" width="342">
+   <path 
+    d="M0 200 v-200 h200 
+    a100,100 90 0,1 0,200
+    a100,100 90 0,1 -200,0
+    z" />
+ 	</defs>
+ 	<use xlink:href="#heart" class="outline " fill="black" transform="rotate(225,150,121)" />
+	</svg>
+
+
+
+	
+</body>
+</html>

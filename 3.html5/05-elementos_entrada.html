@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuevos Elementos de Entrada</title>
+</head>
+<body>
+	<h1>Nuevos Elementos de Entrada</h1>
+	<form action="" method="post">
+
+		<!--NOMBRE-->
+		<div>
+			<label>Nombre</label>
+			<input type="text" placeholder="Nombre Completo" autofocus>
+		</div>
+
+		<!--EMAIL-->
+		<div>
+			<label>Email</label>
+			<input type="email" placeholder="Correo Electronico" autofocus required>
+		</div>
+		<div>
+			<label>Color: </label>
+			<input type="color" oninput="pcolor.value=this.value">
+			<output id="ocolor">#00000</output>
+		</div>
+
+		<!--FECHA-->
+
+		<div>
+			<label>Fecha: </label>
+			<input type="date" oninput="odate.value=this.value">
+			<output id="odate"></output>
+		</div>
+
+		<!--NUMEROS-->
+
+		<div>
+			<label>Numero 1: </label>
+			<input type="number" min="0" max="10" step="2" id="num1" oninput=
+			"osuma.value=parsInt(this.value)+parseInt(num2.value)" value="0"
+			required>
+			<label>Numero 2: </label>
+			<input type="number" min="0" max="10" step="2" id="num1" oninput=
+			"osuma.value=parsInt(this.value)+parseInt(num2.value)" value="0"
+			required>
+			<output id="osuma"></output>
+		</div>
+
+		<!--RANGO-->
+		<div>
+			<label>Rango: </label>
+			<input type="range" min="1" max="100" oninput="orange.value=this.value">
+			<output id="orange"></output>
+		</div>
+
+		<!--TIEMPO-->
+
+		<div>
+			<label>Tiempo: </label>
+			<input type="time">
+		</div>
+
+		<!--LENGUAJES-->
+		<div>
+			<input list="lenguajes">
+			<datalist id="lenguajes">
+				<option value="python">Python</option>
+				<option value="ruby">Ruby</option>
+				<option value="csharp">C#</option>
+				<option value="java">Java</option>
+			</datalist>
+		</div>
+
+		<!--FOCUS-->
+
+		<div>
+			<label>Focus: </label>
+			<input type="focus" autofocus>
+		</div>
+
+		<!--BOTON-->
+
+		<div>
+			<button type="submit">Enviar Datos</button>
+		</div>
+	</form>	
+</body>
+</html>
