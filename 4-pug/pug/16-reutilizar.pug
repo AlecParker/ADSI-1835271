@@ -1,0 +1,13 @@
+doctype
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Reutilizable (mixin)
+	body
+		h1 Reutilizable (mixin)
+		mixin serie(name, caps)
+			li= name+' ('+caps+')'
+		+serie('Sabrina', 60)
+		+serie('Legacies', 30)
+		+serie('The Originals', 70)
+		

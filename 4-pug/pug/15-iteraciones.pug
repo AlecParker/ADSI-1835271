@@ -1,0 +1,14 @@
+doctype
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Iteraciones
+		style.
+			li {
+				color: white;
+			}
+	body
+		ul
+			each val, index in ['pink', 'black', 'violet']
+				li(style={background: val})= index + ':' + val
+	
