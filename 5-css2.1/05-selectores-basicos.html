@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selectores Básicos</title>
+	<style>
+	/* Selector Universal (todo) */
+	* {
+		border: 1px dashed darkgrey;
+	}
+	/* Selector Tipo Etiqueta */
+	h1 {
+		color: purple;
+	}
+	/* Selector Descendente */
+	ul li {		
+		color: white;
+		margin: 4px;
+	}
+	/* Selector de Clase */
+	.negro {
+		background-color: black;
+	}
+	/* Selector de Identificación */
+	#purpura {
+		background-color: purple;
+	}
+	/* Selector Combinado */
+	ul.colores li.fuchsia {
+		background-color: fuchsia;
+	}
+	</style>
+</head>
+<body>
+	<h1>Selectores Básicos</h1>
+	<ul class="colores">
+		<li class="negro">Negro</li>
+		<li id="purpura">Purpura</li>
+		<li class="fuchsia">Fuchsia</li>
+	</ul>
+	
+</body>
+</html>

@@ -1,0 +1,17 @@
+h1 {
+	background-color: white;
+	border-bottom: 10px dotted mediumvioletred;
+	color: mediumvioletred;
+	font-family: SourceSansBold;
+	margin: 0px auto;
+	padding: 20px;
+	width: 940px;
+	text-align: center;
+	transition: all 0.5 ease-in;
+	width: 660px;
+}
+h1:hover {
+	border-bottom: 20px solid purple;
+	cursor: pointer;
+	transform: scale(1.0);
+}
