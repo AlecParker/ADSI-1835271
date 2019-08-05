@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bordes (Ancho, Estilo, Color)</title>
+	<style>
+		section.boxes {
+			border-style: solid;
+			height: 140px;
+			width: 280px;
+		}
+		section.box1 {
+			/* Ancho Bordes */
+			border-top-width: thin;
+			border-right-width: thick;
+			border-bottom-width: 10px;
+			border-left-width: 20px;
+			/* Forma Corta */
+			border-width: thin thick 10px 20px;
+		}
+		section.box2 {
+			border-width: 10px;
+			background-color: #D1926C;
+			/* color Bordes */
+			border-top-color: pink;
+			border-right-color: black;
+			border-bottom-color: #1B1B1B;
+			border-left-color: steelblue;
+			/* Forma Corta */
+			border-color: pink #2A2A2A grey steelblue;
+		}
+		section.box3 {
+			border-width: 3px;
+			/* Estilo Bordes */
+			border-top-style: solid;
+			border-right-style: dotted;
+			border-bottom-style: dashed;
+			border-left-style: double;
+			/* Forma Corta */
+			border-style: solid dotted dashed double;
+
+		}
+		section.box4 {
+			border: 15px solid steelblue;
+
+		}
+	</style>
+</head>
+<body>
+	<h1>Bordes (Ancho, Estilo, Color)</h1>
+	<h3>Ancho:</h3>
+	<section class="boxes box1"></section>
+	<h3>Color:</h3>
+	<section class="boxes box2"></section>	
+	<h3>Estilo:</h3>
+	<section class="boxes box3"></section>
+	<h3>Forma Corta:</h3>
+	<section class="boxes box4"></section>
+</body>
+</html>
