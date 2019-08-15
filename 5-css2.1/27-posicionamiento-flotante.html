@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Posicionamiento (Flotante)</title>
+	<style>
+		section {
+			border: 1px solid grey;
+			margin: 20px auto;
+			padding: 10px;
+			width: 360px;
+		}
+		section div {
+			background-color: white;
+			border: 1px solid grey;
+			margin: 10px;
+			padding: 20px 10px;
+			width: 95px;
+		}
+		section div.box1 {
+			float: right;
+		}
+		section img {
+			float: left;
+		}
+		section p.clear {
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+	<h1>Posicionamiento (Flotante)</h1>
+	<section>
+		<div class="box1">Caja 1</div>
+		<div class="box2">Caja 2</div>
+		<div class="box3">Caja 3</div>
+	</section>
+	<section>
+		<img src="imgs/bgp1.jpg" alt="">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, natus!</p>
+		<p class="clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sequi, cum quae! Autem, molestiae.</p>
+	</section>
+	
+</body>
+</html>
