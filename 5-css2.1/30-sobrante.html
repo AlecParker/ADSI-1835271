@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contenido sobreante (overflow)</title>
+	<style>
+		section.overflow{	
+			margin: 10px auto;	
+			width: 500px;			
+		}
+
+		section.overflow div{
+			border: 1px solid black;
+			display: inline-block;	
+			height: 250px;
+			padding: 10px;	
+			vertical-align: top;	
+			width: 140px;
+			
+		}
+		section.overflow div h3{
+			background-color: #ccc;
+			margin: 0;
+			padding: 10px;						
+		}
+
+		section.overflow div.box1 {overflow: visible;}
+		section.overflow div.box2 {overflow: hidden;}
+		section.overflow div.box3 {overflow: scroll;}
+
+			
+
+	</style>
+		
+	
+</head>
+<body>
+	<h1>Contenido Sobrante (overflow)</h1>
+	<section class="overflow">
+		<div class="box1">
+			<h3>overflow:visible</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit illum magni molestiae deserunt dolore vitae, nobis eaque magnam minus vero, repellat maiores iure quod eos corrupti tenetur provident eum consequuntur. Dignissimos repudiandae illum vel ex soluta delectus, quos maxime voluptatibus, cupiditate, alias, a fugit quas. Perferendis natus laborum, sed consectetur.</p>
+		</div>
+		<div class="box2">
+			<h3>overflow:hidden</h3>
+			<p>Labore expedita tempore, odio ullam facilis repudiandae rerum velit deleniti rem, dolorum laborum. Voluptates modi quos deserunt ullam explicabo sint laboriosam repellendus, dolorem a reprehenderit excepturi autem sunt, non, aut mollitia totam nesciunt iure soluta odio ipsam sapiente. Recusandae eligendi error sed expedita, inventore accusamus beatae corporis, temporibus aspernatur eos?</p>
+		</div>
+		<div class="box3">
+			<h3>overflow:scroll</h3>
+			<p>In numquam blanditiis, dolorum hic rem? Vel unde quae animi autem ratione aut doloremque minus deleniti nemo qui eveniet cupiditate nesciunt iste odit distinctio, numquam, exercitationem omnis, neque ipsa fugiat, nam officiis tempore delectus accusamus! Qui, eveniet. Libero perspiciatis, quidem inventore quod, accusamus ad id ab. Neque, voluptas expedita itaque!</p>
+		</div>
+	</section>
+</body>
+</html>

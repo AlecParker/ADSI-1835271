@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eje z (z-index)</title>
+	<style>
+		section.boxes {
+			position: relative;
+			margin: 10px auto;
+			width: 300px;
+		}
+		section.boxes div {
+			border: 2px solid black;
+			position: absolute;
+			height: 120px;
+			width: 300px;
+		}
+		section.boxes div h4{
+			font-size: 4em;
+			font-family: SourceSans;
+			color: black;
+			margin: 0px 10px;
+		}
+		section.boxes div.box1{
+			background-color: #3A74C2;
+			top: 0px; left: 0px;
+			z-index: 1;
+		}
+		section.boxes div.box2{
+			background-color: #498FEE;		
+			top: 50px; left: 80px;
+			z-index: 2;
+		}
+		section.boxes div.box3{
+			background-color: #82AEEA;
+			color: ;
+			top: 100px; left: 150px;
+			z-index: 3;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<h1>Eje z (z-index)</h1>
+		<section class="boxes">
+			<div class="box1">
+				<h4>1</h4>
+			</div>
+			<div class="box2">
+				<h4>2</h4>
+			</div>
+			<div class="box3">
+				<h4>3</h4>
+			</div>
+		</section>
+	</main>
+	
+</body>
+</html>
