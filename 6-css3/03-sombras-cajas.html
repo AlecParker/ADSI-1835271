@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sombreas Cajas</title>
+	<link rel="stylesheet" href="css/master.css">
+	<style>
+		div.box {
+			border: 1px solid black;
+			height: 200px;
+			margin: 20px auto;
+			width: 300px;
+		}		
+		div.box1 {
+			box-shadow: 0px 0px 12px #000;
+		}
+		div.box2 {
+			box-shadow: -8px -8px 20px 6px #333;
+		}
+		div.box3 {
+			box-shadow: 0px -4px 24px #333 inset;
+		}
+		div.box4 {
+			box-shadow: 7px 7px 0 pink,
+						10px 10px 0px steelblue,
+						13px 13px 0px black;
+		}
+		div.box5 {
+			box-shadow: 0px 0px 6px 12px steelblue,
+						0px 0px 12px 6px fuchsia inset
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Sombras Cajas</h1>
+		</header>
+		<section>
+			<h3>box-shadow: 0px 0px 12px #000</h3>	
+			<div class="box box1"></div>	
+			<h3>box-shadow: -8px -8px 20px 6px #333</h3>	
+			<div class="box box2"></div>	
+			<h3>box-shadow: 0px -4px 20px #333 inset</h3>	
+			<div class="box box3"></div>	
+			<h3>box-shadow: multiple colors</h3>	
+			<div class="box box4"></div>	
+			<h3>box-shadow: </h3>	
+			<div class="box box5"></div>	
+		</section>	
+	</main>	
+</body>
+</html>
