@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fondos (Degradados)</title>
+	<link rel="stylesheet" href="css/master.css">
+	<style>
+		div.box {
+			border: 2px solid #1d4e6f;
+			height: 250px;
+			width: 400px;
+			margin: 20px auto;
+		}
+		div.box1 {
+			background: linear-gradient(to top, pink, steelblue);
+		}
+		div.box2 {
+			background: linear-gradient(45deg, pink, steelblue);
+		}
+		div.box3 {
+			background: linear-gradient(to bottom, steelblue 35%, pink 30%, pink 70%, black 20%);
+		}
+		div.box4 {
+			background: linear-gradient(to right, pink 50%, steelblue 0);
+			background-size: 40px 100%;
+			background-position: center center;
+		}
+		div.box5 {
+			background: radial-gradient(circle, #fff, #000);
+		}
+		div.box6 {
+			background: radial-gradient(circle, #fff 20%, #000 20%,
+												#000 40%, #fff 40%,
+												#fff 60%, #000 60%,
+												#000 80%, #fff 80%);
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Fondos (Degradados)</h1>
+		</header>		
+		<section>
+			<h3>linear-gradient(linear-gradient(to top, pink, steelblue))</h3>
+			<div class="box box1"></div>
+			<h3>linear-gradient(linear-gradient(45deg, pink, steelblue))</h3>
+			<div class="box box2"></div>
+			<h3>linear-gradient(linear-gradient(to bottom, fuchsia 35%, blue 30%, blue 70%, black 20%))</h3>
+			<div class="box box3"></div>
+			<h3>linear-gradient(linear-gradient(to right, pink 50%, steelblue 0); background-size: 40px 100%;)</h3>
+			<div class="box box4"></div>
+			<h3>linear-gradient(radial-gradient(circle, #fff, #000);
+)</h3>
+			<div class="box box5"></div>
+			<h3>linear-gradient(radial-gradient(circle, #fff 20%, #000 20%,
+												#000 40%, #fff 40%,
+												#fff 60%, #000 60%,
+												#000 80%, #fff 80%);)</h3>
+			<div class="box box6"></div>
+		</section>
+	</main>
+</body>
+</html>
