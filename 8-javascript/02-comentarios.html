@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    ></meta>
+
+    <title>Comentarios JS</title>
+
+    <link
+        rel="stylesheet"
+        href="css/master.css"
+    ></link>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Comentarios JS</h1>
+        </header>
+
+        <section>
+            <ul>
+                <li>HTML</li>
+
+                <li>CSS</li>
+
+                <li>JS</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        var lis = document.getElementsByTagName('li');
+        lis[2].style.color = 'white';
+        lis[2].style.backgroundColor = 'rgba(0,0,0,.4)';
+        lis[2].style.padding = '2px';
+
+        // Comentario de linea
+        // alert('Comentarios en JS');
+
+        /*Comentario de bloque
+        - permite comentar multiples lineas
+        - util para buscar errores (ir bloqueando por bloques para descartar errores de syntaxis)
+        */
+
+        // for (var i=0; i < lis.length; i++) console.log(lis[i].textContent)
+    </script>
+</body>
+</html>

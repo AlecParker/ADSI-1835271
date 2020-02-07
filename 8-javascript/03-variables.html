@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    ></meta>
+
+    <title>Variables JS</title>
+
+    <link
+        rel="stylesheet"
+        href="css/master.css"
+    ></link>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Variables JS</h1>
+        </header>
+
+        <section>
+            <ol>
+                <li class="number">23</li>
+                <li class="number">8</li>
+                <li class="number">25</li>
+                <li class="number">3</li>
+            </ol>
+            <h4 id="suma"></h4>
+            <ul>
+                <li>Hola</li>
+                <li>Mundo</li>
+            </ul> 
+
+            <h4 id="msj"></h4> 
+
+            <h4 id="comp"></h4>
+
+            <h4 id="arr"></h4>
+
+            <h4 id="obj"></h4>
+        </section>
+    </main>
+
+    <script>
+
+        //Tipo numericos        
+        var nums = document.getElementsByClassName('number');
+        var suma = document.getElementById('suma');
+        var res = 0;
+        for(var i=0; i < nums.length; i++){
+            res += parseInt(nums[i].textContent);
+        }
+        suma.innerHTML = "La suma es: "+res;
+        
+        //Concatenar palabras
+        var msj = document.getElementById('msj');
+        var strings = document.getElementsByTagName('li');
+        msj.innerHTML = strings[4].textContent + " " + strings[5].textContent;
+
+        // var strings = document.querySelectorAll('ul li');
+        // for(var i=0; i < strings.length; i++){
+        //     str += strings[i].textContent;
+        // }
+        // msj.innerHTML = "La cadena resultado es: "+str;
+
+        //Tipo booleano
+        var comp = document.getElementById('comp');
+        var bool = (4===9);
+        comp.innerHTML = "(4===7) => " + bool;
+        bool = (15>9)
+        comp.innerHTML += "<br> (15>9) => " + bool;
+
+        //Tipo arreglo
+        var arr = document.getElementById('arr');
+        var dbll = new Array('Popper', 'Cocaina', 'Heroina', 'Marihuana', 'Tusi', 'Perico', 'LSD');
+        dbll[7] = 'Pene';
+        arr.innerHTML = dbll;
+
+        //Tipo objeto
+        var obj = document.getElementById('obj');
+        var dildo = {
+            power: 99,
+            speed: 69,
+            battery: 100            
+        };
+        obj.innerHTML = "El dildo vibrador tiene un poder de: " + dildo.power;
+    </script>
+</body>
+</html>

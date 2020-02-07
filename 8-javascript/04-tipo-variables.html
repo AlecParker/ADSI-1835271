@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    ></meta>
+
+    <title>Tipo de Variables</title>
+
+    <link
+        rel="stylesheet"
+        href="css/master.css"
+    ></link>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Tipo de Variables</h1>
+        </header>
+
+        <section>
+            <h4 id="test"></h4>
+        </section>
+    </main>
+
+    <script>
+        var bool = false;
+       var num = 1;
+       var string = "Hola";
+       var array = new Array('uno', 'dos', 'tres');
+       var obj = {
+            attr1: 1,
+            attr2: 2,
+            attr3: 3
+       }
+
+       test.innerHTML = "bool: " + bool.constructor.name + "<br> num: " + num.constructor.name + "<br> string: " + string.constructor.name + "<br> array: " + array.constructor.name + "<br> obj: " + obj.constructor.name
+    </script>
+</body>
+</html>

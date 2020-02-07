@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(78, 142, 238);
+    font: 16px Tahoma;
+}
+main {
+    margin: 20px auto;
+    width: 1024px;
+}
+main header h1 {
+    color: #ffffff;
+    background-color:rgba(0, 0, 0, 0.534);
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+main section {
+    color: rgba(0,0,0,.9);
+    background-color: rgba(255, 255, 255, 0.527);
+    padding: 10px;
+}
