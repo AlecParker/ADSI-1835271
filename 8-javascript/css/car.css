@@ -1,0 +1,67 @@
+main.base {
+    background: transparent url(../img/base.png) no-repeat center;     
+    height: 442px;
+    margin: 20px auto;
+    width: 306px;
+}
+
+main.base section.attributes ul {
+    list-style: none;
+    padding: 75px 0px 0px 97px;
+}
+
+main.base section.attributes ul li{
+    color: #ffffff;
+    font: 16px Arial;
+    margin-bottom: 16px;
+}
+
+main.base section.methods button {
+    border: none;
+    cursor: pointer;
+    height: 51px;
+    margin: 100px 0px 0px 6px;
+    width: 51px;
+}
+
+main.base section.methods button:hover{
+    transform: scale(1);
+}
+
+main.base section.methods button#btn-on
+{
+    background: transparent url(../img/start.png) no-repeat
+}
+main.base section.methods button#btn-on:hover
+{
+    background: transparent url(../img/startA.png) no-repeat
+}
+
+main.base section.methods button#btn-off{
+    background: transparent url(../img/stop.png) no-repeat
+}
+main.base section.methods button#btn-off:hover{
+    background: transparent url(../img/stopA.png) no-repeat
+}
+
+main.base section.methods button#btn-backward{
+    background: transparent url(../img/backward.png) no-repeat
+}
+main.base section.methods button#btn-backward:hover{
+    background: transparent url(../img/backwardA.png) no-repeat
+}
+
+main.base section.methods button#btn-pause{
+    background: transparent url(../img/pause.png) no-repeat
+}
+main.base section.methods button#btn-pause:hover{
+    background: transparent url(../img/pauseA.png) no-repeat
+}
+
+main.base section.methods button#btn-forward{
+    background: transparent url(../img/forward.png) no-repeat
+}
+main.base section.methods button#btn-forward:hover{
+    background: transparent url(../img/forwardA.png) no-repeat
+}
+
